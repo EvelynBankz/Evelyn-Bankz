@@ -6,7 +6,7 @@ html{
 }
 :root{
     --bg-color: #000000;
-    --bg-second-color: #282A3A;
+    --bg-second-color: #282a3a;
     --text-color: white;
     --main-color: rgb(76, 5, 76);
 }
@@ -452,11 +452,16 @@ span{
 .education-content .content h3{
     font-size: 2rem;
 }
-.education-content .content p{
+.education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+    color: var(--text-color);
 }
-
+.education-content .content p a{
+    position: relative;
+    color: var(--text-color);
+    z-index: 100;
+}
 .skills{
     min-height: auto;
     padding-bottom: 7rem;
@@ -502,6 +507,20 @@ span{
 
 .skills-content .list-skills {
     list-style-type: disc;  
+}
+
+.skills-content .list-skills-two-rows {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-content .list-skills-two-rows li {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.5rem 0;
 }
 
 .skills-content .list-skills li{
